@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Afia Skincare | Creative Marketing Agency</title>
+
+<meta name="description" content="Afia Skincare helps business owners promote their products, attract customers, and grow sales through creative digital marketing.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --blue: #1254e8;
+  --dark: #071d49;
+  --light: #edf4ff;
+  --white: #ffffff;
+  --text: #53627c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--white);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section-label {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  font-size: clamp(32px, 5vw, 55px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.section-text {
+  color: var(--text);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--blue);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0039ba;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #1254e844;
+}
+
+.btn-white {
+  background: white;
+  color: var(--blue);
+}
+
+.btn-white:hover {
+  transform: translateY(-4px);
+}
+
+/* NAVIGATION */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #e5edfa;
+}
+
+.navbar {
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  color: var(--dark);
+}
+
+.logo span {
+  color: var(--blue);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: var(--dark);
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, #d5e6ff, transparent 40%),
+    linear-gradient(135deg, #ffffff, #eef5ff);
+  padding: 110px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 11px 18px;
+  background: #e0ecff;
+  color: var(--blue);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.hero h1 {
+  font-size: clamp(43px, 6vw, 78px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  margin-bottom: 28px;
+}
+
+.hero h1 span {
+  color: var(--blue);
+}
+
+.hero p {
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  border-radius: 30px 100px 30px 100px;
+  box-shadow: 0 30px 60px #1254e825;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  background: white;
+  padding: 22px;
+  border-radius: 20px;
+  box-shadow: 0 15px 45px #071d4920;
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-card h3 {
+  font-size: 24px;
+  color: var(--blue);
+}
+
+.floating-card p {
+  font-size: 12px;
+  margin: 5px 0 0;
+}
+
+@keyframes float {
+  0%,100% {transform: translateY(0);}
+  50% {transform: translateY(-12px);}
+}
+
+/* TRUST */
+
+.trust {
+  padding: 45px 0;
+  border-bottom: 1px solid #e5edfa;
+}
+
+.trust p {
+  text-align: center;
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.trust-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.trust-items span {
+  color: #8292af;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+/* SERVICES */
+
+.services {
+  background: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  margin-top: 55px;
+}
+
+.service-card {
+  background: #f4f8ff;
+  padding: 38px 30px;
+  border-radius: 25px;
+  border: 1px solid #e4edfc;
+  transition: 0.4s;
+}
+
+.service-card:hover {
+  background: var(--blue);
+  color: white;
+  transform: translateY(-12px);
+}
+
+.service-icon {
+  font-size: 38px;
+  margin-bottom: 25px;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.service-card:hover p {
+  color: #e5edff;
+}
+
+/* ABOUT */
+
+.about {
+  background: var(--light);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.about-features {
+  margin: 30px 0;
+}
+
+.about-feature {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: 700;
+}
+
+.check {
+  width: 32px;
+  height: 32px;
+  background: var(--blue);
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+  background: white;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.project {
+  overflow: hidden;
+  border-radius: 25px;
+  background: #f1f5ff;
+}
+
+.project img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+  transition: 0.6s;
+}
+
+.project:hover img {
+  transform: scale(1.08);
+}
+
+.project-info {
+  padding: 28px;
+}
+
+.project-info small {
+  color: var(--blue);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.project-info p {
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* PROCESS */
+
+.process {
+  background: var(--dark);
+  color: white;
+}
+
+.process .section-label {
+  color: #91b5ff;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.process-card {
+  border-top: 1px solid #ffffff55;
+  padding-top: 25px;
+}
+
+.process-number {
+  font-size: 55px;
+  font-weight: 800;
+  color: #6da0ff;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.process-card p {
+  color: #b7c8e9;
+  line-height: 1.8;
+}
+
+/* CTA */
+
+.cta {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(135deg,#1254e8,#07339e);
+  color: white;
+}
+
+.cta h2 {
+  font-size: clamp(35px,5vw,60px);
+  margin-bottom: 25px;
+}
+
+.cta p {
+  max-width: 600px;
+  margin: 0 auto 35px;
+  line-height: 1.8;
+  color: #e1ebff;
+}
+
+/* CONTACT */
+
+.contact {
+  background: #f5f8ff;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-info p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.contact-detail {
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.contact-form {
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px #071d490c;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 17px;
+  border: 1px solid #dce5f5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--blue);
+}
+
+.contact-form button {
+  border: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #041431;
+  color: white;
+  padding: 60px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer p {
+  color: #a9bbda;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer a {
+  display: block;
+  color: #a9bbda;
+  margin-bottom: 13px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.copyright {
+  border-top: 1px solid #ffffff22;
+  padding-top: 25px;
+  text-align: center;
+  color: #9fb2d3;
+  font-size: 13px;
+}
+
+/* ANIMATIONS */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width: 900px) {
+  .hero-grid,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid,
+  .process-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .hero-image img {
+    height: 420px;
+  }
+
+  .floating-card {
+    left: 10px;
+  }
+}
+
+@media(max-width: 600px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .navbar {
+    min-height: 70px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    background: white;
+    flex-direction: column;
+    box-shadow: 0 15px 25px #071d4915;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero-image img {
+    height: 350px;
+  }
+
+  .services-grid,
+  .portfolio-grid,
+  .process-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .project img {
+    height: 260px;
+  }
+
+  .contact-form {
+    padding: 25px;
+  }
+}
+
+@media(prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+  <div class="container navbar">
+
+    <a href="#home" class="logo">
+      AFIA<span>SKINCARE.</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Our Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu-btn"
+      id="menuBtn"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks">
+      ☰
+    </button>
+
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <div class="hero-badge">
+        ✦ CREATIVE DIGITAL MARKETING AGENCY
+      </div>
+
+      <h1>
+        We Turn
+        <span>Attention</span>
+        Into Real
+        <span>Sales.</span>
+      </h1>
+
+      <p>
+        At Afia Skincare, we help ambitious
+        business owners promote their products,
+        attract the right customers, build
+        powerful brands, and grow their sales
+        through creative digital marketing.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          Grow Your Business →
+        </a>
+
+        <a href="#portfolio" class="btn btn-white">
+          Explore Our Work
+        </a>
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1000&q=85"
+        alt="Premium skincare products">
+
+      <div class="floating-card">
+        <h3>Creative + Strategy</h3>
+        <p>Marketing designed for growth</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TRUST -->
+
+<section class="trust">
+  <div class="container">
+
+    <p>
+      CREATIVE MARKETING FOR AMBITIOUS BUSINESSES
+    </p>
+
+    <div class="trust-items">
+      <span>BEAUTY</span>
+      <span>SKINCARE</span>
+      <span>FASHION</span>
+      <span>LIFESTYLE</span>
+      <span>E-COMMERCE</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        WHAT WE DO
+      </div>
+
+      <h2 class="section-title">
+        Creative Solutions.<br>
+        Powerful Business Growth.
+      </h2>
+
+      <p class="section-text">
+        We combine strategy, creativity,
+        and digital marketing to help
+        your business stand out and
+        connect with more customers.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3>Social Media Marketing</h3>
+        <p>
+          We help businesses grow their
+          presence on TikTok, Instagram,
+          Facebook, and WhatsApp.
+        </p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">📢</div>
+        <h3>Product Promotion</h3>
+        <p>
+          Creative promotional campaigns
+          designed to help your products
+          reach potential buyers.
+        </p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🎨</div>
+        <h3>Brand Development</h3>
+        <p>
+          We create memorable branding
+          that makes your business
+          professional and recognizable.
+        </p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🎬</div>
+        <h3>Content Creation</h3>
+        <p>
+          Engaging videos, beautiful
+          product visuals, and creative
+          social media content.
+        </p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🎯</div>
+        <h3>Customer Attraction</h3>
+        <p>
+          Smart marketing strategies
+          designed to attract people
+          interested in your products.
+        </p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🚀</div>
+        <h3>Business Growth Strategy</h3>
+        <p>
+          We help business owners plan
+          campaigns that turn online
+          visibility into sales opportunities.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-image reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+        alt="Creative modern workspace">
+
+    </div>
+
+    <div class="reveal">
+
+      <div class="section-label">
+        ABOUT AFIA SKINCARE
+      </div>
+
+      <h2 class="section-title">
+        Your Vision.<br>
+        Our Creativity.<br>
+        Your Growth.
+      </h2>
+
+      <p class="section-text">
+        We believe every business deserves
+        the opportunity to be seen.
+
+        Afia Skincare Marketing Agency
+        helps entrepreneurs showcase
+        their products, build customer
+        trust, and create meaningful
+        connections with their audience.
+      </p>
+
+      <div class="about-features">
+
+        <div class="about-feature">
+          <span class="check">✓</span>
+          Creative marketing ideas
+        </div>
+
+        <div class="about-feature">
+          <span class="check">✓</span>
+          Customer-focused strategies
+        </div>
+
+        <div class="about-feature">
+          <span class="check">✓</span>
+          Professional brand presentation
+        </div>
+
+        <div class="about-feature">
+          <span class="check">✓</span>
+          Marketing designed to support sales
+        </div>
+
+      </div>
+
+      <a href="#contact" class="btn btn-primary">
+        Work With Us →
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        SELECTED WORK
+      </div>
+
+      <h2 class="section-title">
+        Creative Ideas That<br>
+        Make Brands Stand Out.
+      </h2>
+
+      <p class="section-text">
+        Explore examples of the creative
+        direction and marketing campaigns
+        we can develop for businesses.
+      </p>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1000&q=85"
+          alt="Skincare product campaign concept">
+
+        <div class="project-info">
+          <small>CONCEPT PROJECT 01</small>
+          <h3>Luxury Skincare Campaign</h3>
+          <p>
+            Product photography,
+            premium branding, and
+            social media marketing concepts.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85"
+          alt="Fashion marketing campaign concept">
+
+        <div class="project-info">
+          <small>CONCEPT PROJECT 02</small>
+          <h3>Fashion Brand Promotion</h3>
+          <p>
+            Creative advertising and
+            social media campaign ideas
+            for fashion businesses.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=85"
+          alt="Beauty marketing concept">
+
+        <div class="project-info">
+          <small>CONCEPT PROJECT 03</small>
+          <h3>Beauty Product Marketing</h3>
+          <p>
+            Beautiful product presentation
+            and promotional content
+            designed to attract customers.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="project reveal">
+
+        <img
+          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=85"
+          alt="Digital marketing strategy concept">
+
+        <div class="project-info">
+          <small>CONCEPT PROJECT 04</small>
+          <h3>Digital Growth Strategy</h3>
+          <p>
+            Creative digital campaigns
+            and customer engagement
+            strategies for growing businesses.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+
+<section class="section process">
+  <div class="container">
+
+    <div class="reveal">
+
+      <div class="section-label">
+        HOW WE WORK
+      </div>
+
+      <h2 class="section-title">
+        From Your Idea<br>
+        To Your Next Opportunity.
+      </h2>
+
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card reveal">
+        <div class="process-number">01</div>
+        <h3>Discover</h3>
+        <p>
+          We learn about your business,
+          your products, your customers,
+          and your marketing goals.
+        </p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">02</div>
+        <h3>Create</h3>
+        <p>
+          We develop creative marketing
+          ideas, promotional content,
+          and brand strategies.
+        </p>
+      </div>
+
+      <div class="process-card reveal">
+        <div class="process-number">03</div>
+        <h3>Grow</h3>
+        <p>
+          We help you reach potential
+          customers, improve engagement,
+          and work toward more sales.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+  <div class="container reveal">
+
+    <h2>
+      Your Next Big Business<br>
+      Opportunity Starts Here.
+    </h2>
+
+    <p>
+      Stop letting your amazing produ
